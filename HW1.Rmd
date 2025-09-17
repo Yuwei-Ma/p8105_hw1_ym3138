@@ -1,20 +1,13 @@
 ---
-title: "Data_Science_Notes"
+title: "HW1"
 author: "Yuwei Ma"
-date: "2025-09-16"
+date: "2025-09-17"
 output: github_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## Workflow 
-When Starting a new analysis/project/whatever
-- Create Github repo (check read-me, copy the URL)
-- Create linked R Project using repo URL (Creat Proj-version control-Git)
-- Do stuff
-
 
 ## R Markdown
 
