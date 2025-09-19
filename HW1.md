@@ -63,7 +63,7 @@ x <- rnorm(10)
 df = tibble(
   x_numeric = x,
   x_logic = x > 0, # a logical vector indicating whether elements of the sample are greater than 0
-  x_char = letters[1:10], # a character vector of length 10
+  x_char = c("My", "name", "is", "Lucy","and","I","am","a","firstyear","student"), # a character vector of length 10 
   x_fac = factor(rep(c("low","medium","high"), length.out = 10)) # a factor vector of length 10, with 3 different factor “levels”
 )
 ```
