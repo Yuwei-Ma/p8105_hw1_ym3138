@@ -22,7 +22,7 @@ data("early_january_weather")
 * The `early_january_weather` data set contains variables: 
   + origin: Weather station
   + year, month, day, hour: time of recording
-  + temp, dewp: Temperature and dewpoint in Fahrenheit. The mean temperature is `r mean(dplyr::pull(early_january_weather, temp), na.rm = TRUE)` F. 
+  + temp, dewp: Temperature and dewpoint in Fahrenheit. The mean temperature is `r mean(early_january_weather$temp, na.rm = TRUE)` F. 
   + humid: relative humidity
   + wind_dir, wind_speed, wind_gust: wind direction (in degrees), speed and gust speed (in mph)
 
@@ -55,7 +55,7 @@ x <- rnorm(10)
 df = tibble(
   x_numeric = x,
   x_logic = x > 0, # a logical vector indicating whether elements of the sample are greater than 0
-  x_char = c("My", "name", "is", "Lucy","and","I","am","a","firstyear","student"), # a character vector of length 10 
+  x_char = letters[1:10], # a character vector of length 10
   x_fac = factor(rep(c("low","medium","high"), length.out = 10)) # a factor vector of length 10, with 3 different factor “levels”
 )
 ```
