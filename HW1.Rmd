@@ -22,7 +22,7 @@ data("early_january_weather")
 * The `early_january_weather` data set contains variables: 
   + origin: Weather station
   + year, month, day, hour: time of recording
-  + temp, dewp: Temperature and dewpoint in Fahrenheit. The mean temperature is `r mean(early_january_weather$temp, na.rm = TRUE)` F. 
+  + temp, dewp: Temperature and dewpoint in Fahrenheit. The mean temperature is `r mean(dplyr::pull(early_january_weather, temp), na.rm = TRUE)` F. 
   + humid: relative humidity
   + wind_dir, wind_speed, wind_gust: wind direction (in degrees), speed and gust speed (in mph)
 
